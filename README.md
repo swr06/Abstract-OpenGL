@@ -7,7 +7,8 @@ So this library abstracts the whole thing into classes which makes it easier to 
 I used GLFW for windowing and GLEW to access modern OpenGL functions.
 
 # Brief Note
-The "CalculateFPS(GLFW* window)" in Fps.h is used to limit the fps to 60
+The "CalculateFPS(GLFW* window)" in Fps.h is used to limit the fps to 60.
+
 The "DisplayFPS(GLFW* window)" in Fps.h is used to display the fps on the GLFW window title bar.
 
 # About the programmer
