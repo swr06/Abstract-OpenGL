@@ -6,6 +6,5 @@
 #include "VertexArray.h"
 #include "Texture.h"
 #include "Quad.h"
-#include "Renderer.h"
 #include "Fps.h"
 

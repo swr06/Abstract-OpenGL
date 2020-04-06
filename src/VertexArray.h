@@ -5,19 +5,23 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 
-class VertexArray
+namespace GLGame
 {
-public:
+	using namespace std; 
 
-	VertexArray();
-	~VertexArray();
+	class VertexArray
+	{
+	public:
 
-	void Bind();
-	void Unbind();
+		VertexArray();
+		~VertexArray();
 
-private:
+		void Bind();
+		void Unbind();
 
-	GLuint array_id;
-	GLenum type;
-};
+	private:
 
+		GLuint array_id;
+		GLenum type;
+	};
+}

@@ -5,22 +5,26 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 
-class VertexBuffer
+namespace GLGame
 {
-	public : 
+	using namespace std;
 
-	VertexBuffer(GLenum type);
-	~VertexBuffer(); 
+	class VertexBuffer
+	{
+	public:
 
-	void BufferData(GLsizeiptr size, void* data, GLenum usage); 
-	void Bind(); 
-	void Unbind();
-	void VertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized,
-							 GLsizei stride, const GLvoid* pointer);
+		VertexBuffer(GLenum type);
+		~VertexBuffer();
 
-	private : 
+		void BufferData(GLsizeiptr size, void* data, GLenum usage);
+		void Bind();
+		void Unbind();
+		void VertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized,
+			GLsizei stride, const GLvoid* pointer);
 
-	GLuint buffer_id;
-	GLenum type; 
-};
+	private:
 
+		GLuint buffer_id;
+		GLenum type;
+	};
+}
